@@ -1,0 +1,240 @@
+/* CSS */
+@font-face {
+    font-family: Aquire;
+    src: url(D:\BCA Project\WEBSITE\Aquire);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.banner{
+    top: 0;
+    width: 100%;
+    height: 100vb;
+    /* background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3)); */
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+}
+.logo{
+    left: 490px;
+    margin: auto;
+    position: absolute;
+    margin-top: 10px;
+    top: 100px;
+    width: 200px;
+    cursor: pointer;
+}
+.logo2{
+    top: 80px;
+    left: 530px;
+    margin: auto;
+    position: absolute;
+    margin-top: 10px;
+    width: 150px;
+    cursor: pointer;
+}
+.navbar{
+    width: 80%;
+    margin: 10px 220px;
+    padding: 2px;
+    align-items: center;        
+    justify-content:space-between;
+    display : flex;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    font-family: Aquire;
+    text-decoration: none;
+    color: cyan;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: "";
+    height: 3px;
+    width: 0%;
+    background-color: rgb(17, 230, 205);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.2s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.brand{
+    left: 25%;
+    margin: auto;
+    position: absolute;
+    color: aqua;
+    font-size: 80px;
+    margin-top: 10px;
+}
+.tagline{
+    font-family: Aquire;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 70%;
+    transform: translatey(-50%);
+    text-align: center;
+    color: aliceblue;
+    scroll-behavior: auto;
+}
+.content h3 {
+    margin: 20px;
+    font-weight:bolder;
+    line-height: 25px;
+}
+.content p{
+    height: auto;
+    line-height: 30px;
+    scroll-behavior: smooth;
+}
+.btn{
+    width: 200px;
+    padding: 15px;
+    text-align: center;
+    margin: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: 2px solid rgb(12, 235, 202);
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: cyan;
+    height: 100%;
+    width: 0%;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+.btn:hover span{
+    width: 100%;
+}
+.btn:hover{
+    border: none;
+}
+.login{
+    font-family: Aquire;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    text-align: center;
+    margin: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: 2px solid rgb(12, 235, 202);
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+h1:hover{
+    -webkit-text-stroke: 2px cyan;
+    color: transparent;
+}
+
+.bgv{
+    top: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-blend-mode:multiply;
+    opacity: 5;
+}
+.bgv2{
+    position: absolute;
+    top: 650px;
+    right: 0;
+    z-index: -1;
+    background-blend-mode:overlay;
+}
+.banner2{
+    top: 1000px;
+    width: 100%;
+    height: 100vb;
+    /* background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3)); */
+    background-position:initial;
+    background-size: cover;
+}
+h4{
+    font-family: Aquire;
+}
+
+#ss{
+    top: 370px;
+    color: cyan;
+}
+.ssinstr{
+    color: aliceblue;
+    width: 100%;
+    text-align: center;
+    line-height: 10px;
+    justify-content:;
+}
+.hangmaninst{
+    position: relative;
+    color: aliceblue;
+    width: 100%;
+    text-align: center;
+    line-height: 10px;
+    justify-content:;
+}
+.aboutcontent{
+    width: 100%;
+    position: absolute;
+    top: 60%;
+    transform: translatey(-50%);
+    text-align: center;
+    color: aliceblue;
+    scroll-behavior: auto;   
+    line-height: 20px;
+}
+
+/* setting video 1 size  */
+@media(min-aspect-ratio:16/9){
+    .bgv{
+        width: 100%;
+        height: auto;
+    }
+}
+@media(max-aspect-ratio:16/9){
+    .bgv{
+        width: auto;
+        height: 100%;
+    }
+}
+/* setting video 2 size  */
+@media(min-aspect-ratio:16/9){
+    .bgv2{
+        width: 100%;
+        height: auto;
+    }
+}
+@media(max-aspect-ratio:16/9){
+    .bgv2{
+        width: auto;
+        height: 100%;
+    }
+}
